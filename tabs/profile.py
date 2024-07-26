@@ -36,7 +36,7 @@ def display_profile():
       # st.session_state.username = new_username
       st.session_state.password = new_password
 
-      update_user(old_username)
+      update_user(st.session_state.username)
       conn = init_connection()
       
       # Update password separately if it has changed
