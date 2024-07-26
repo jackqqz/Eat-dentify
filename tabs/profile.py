@@ -33,7 +33,7 @@ def display_profile():
 
     if st.button("Update Profile"):
       st.session_state.remarks = new_remarks
-      st.session_state.username = new_username
+      # st.session_state.username = new_username
       st.session_state.password = new_password
 
       update_user(old_username)
