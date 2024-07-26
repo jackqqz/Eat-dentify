@@ -6,7 +6,7 @@ restaurants = [
     "American", "British", "German", "Russian", "Polish", "Ukrainian",
     "Brazilian", "Argentine", "Peruvian", "Colombian", "Venezuelan",
     "Caribbean", "Cuban", "Jamaican", "Puerto Rican",
-    "Tex-Mex", "Cajun", "Creole", "Southern (US)", "Soul Food",
+    "Tex-Mex", "Cajun", "Creole", "Southern (US)", "Western", "Soul Food",
     "Barbecue", "Steakhouse", "Seafood", "Sushi", "Ramen", "Dim Sum",
     "Tapas", "Fusion", "Contemporary", "Modern",
     "Farm-to-Table", "Organic", "Vegetarian", "Vegan", "Raw Food",
