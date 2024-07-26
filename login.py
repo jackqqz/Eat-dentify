@@ -27,7 +27,7 @@ DB_FILE = 'users.db'
 
 @st.cache_resource
 def init_connection():
-  return sqlite3.connect(DB_FILE, check_same_thread=False)
+  return sqlite3.connect(DB_FILE, , type='sql', check_same_thread=False)
 
 
 def get_cursor():
