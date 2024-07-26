@@ -11,7 +11,8 @@ def sign_out():
 def display_profile():
   if st.session_state.logged_in:
     old_username = st.session_state.username
-    new_username = st.text_input("New username:", st.session_state.username)
+    st.write("Your username:")
+    st.write(st.session_state.username)
     new_password = st.text_input("New password:",
                                  st.session_state.password,
                                  type='password')
