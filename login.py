@@ -40,7 +40,7 @@ c.execute('''CREATE TABLE IF NOT EXISTS users
              (username TEXT PRIMARY KEY, password TEXT, remarks TEXT)''')
 conn.commit()
 
-@st.experimental_dialog(title="Sign Up Now")
+@st.dialog(title="Sign Up Now")
 def sign_up_page():
   st.subheader("Create New Account")
   new_user = st.text_input("Username", key='signup_username')

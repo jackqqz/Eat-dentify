@@ -37,12 +37,11 @@ def display_profile():
 
       update_user(old_username)
       conn = init_connection()
-      c = get_cursor()
       
       # Update password separately if it has changed
       if new_password != st.session_state.password:
-        c = get_cursor()
-        c.execute("UPDATE users SET password = ? WHERE username = ?",
+        with conn.session as s:
+          s.execute("UPDATE users SET password = ? WHERE username = ?",
                   (make_hashes(new_password), st.session_state.username))
         conn.commit()
 
