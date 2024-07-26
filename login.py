@@ -121,8 +121,6 @@ def update_user(username):
   c = get_cursor()
   c.execute("UPDATE users SET remarks = ? WHERE username = ?",
             (st.session_state.remarks, username))
-  # c.execute("UPDATE users SET username = ? WHERE username = ?",
-  #           (st.session_state.username, username))
   c.execute("UPDATE users SET password = ? WHERE username = ?",
             (make_hashes(st.session_state.password), username))
   conn.commit()
