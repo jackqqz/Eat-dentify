@@ -97,7 +97,7 @@ def display_restaurant():
                         add_column(st.session_state.input, each_restaurant, column_prompt, column_name)
 
             except Exception as e:
-                st.error("Server busy, please try again later 🙁 (approx 1 min)")
+                st.error("Server busy, please try again later 🙁 \n(please wait approximately one minute before trying again)")
                 # st.write(e)
 
             st.rerun()

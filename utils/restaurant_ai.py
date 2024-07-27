@@ -100,7 +100,7 @@ def process_restaurant(input: Input) -> RestaurantResult:
             return selected_result
             
         except Exception as e:
-            st.error("Server busy, please try again later 🙁 (approx 1 min)")
+            st.error("Server busy, please try again later 🙁 \n(please wait approximately one minute before trying again)")
             # st.write(e)
             return None
 
