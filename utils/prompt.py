@@ -44,7 +44,8 @@ You must provide review citation and must apply ' :green-background[place holder
 based on the situation, :red-background[place holder] ' if it a nagative review based on the situation to your
 citation (the exact context of the review not the author) in a new line.
 Do not continue the previous sentence. Please trim the citation with '...'
-if it is too long. You are not allowed to provide citation without this format:
+if it is too long. If you can't a relavent review, do not mention citation or claim. 
+You are not allowed to provide citation without this format:
 '''
 
 meal_suggestion = """
@@ -66,5 +67,5 @@ Write it in plane text, use food emoji. Bold important information not title.
 You must provide review citation and must apply ' :green-background[place holder] ' if it is a positive review
 based on the situation, :red-background[place holder] ' if it a nagative review based on the situation to your citation 
 (the exact context of the review not the author) in a new line. Do not continue the previous sentence. Please trim the citation with '...'
-if it is too long. You are not allowed to provide citation without this format.
+if it is too long. You are not allowed to provide citation without this format. If you can't a relavent review, do not mention citation or claim.
 '''
