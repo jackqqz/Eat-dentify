@@ -107,4 +107,4 @@ def display_restaurant():
         st.info("No restaurants found. Try adjusting your search criteria.")
 
 def format_citation(citation):
-    return citation.replace(':red-background[', '\n\n:red-background[').replace(':green-background[', '\n\n:green-background[').replace(']', '] \n\n \n')
+    return citation.replace(':red-background[', '\n\n:red-background[').replace(':green-background[', '\n\n:green-background[').replace(']', '] \n\n \n\n')
