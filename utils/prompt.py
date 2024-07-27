@@ -43,7 +43,8 @@ Write it in plane text, use food emoji. Bold important information not title.
 You must provide review citation and must apply ' :green-background[place holder] ' if it is a positive review
 , :red-background[place holder] ' if it a nagative review based on the requirement (not how does it sound) to your
 citation (the exact context of the review not the author) in a new line.
-Please trim the citation with '...' if it is too long. If you can't a relavent review, do not mention citation or claim.
+Please trim the citation with '...' if it is too long. If you can't a relavent review, do not mention citation or claim. 
+Always include positive review if there is one. Do not sound too negative towards the restaurant.
 If the review is a mixture of possitive and negative, you are allowed to split it as two review parts.
 You are not allowed to provide citation without this format:
 '''
