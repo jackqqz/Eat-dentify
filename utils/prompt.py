@@ -44,7 +44,8 @@ You must provide review citation and must apply ' :green-background[place holder
 based on the situation, :red-background[place holder] ' if it a nagative review based on the situation to your
 citation (the exact context of the review not the author) in a new line.
 Do not continue the previous sentence. Please trim the citation with '...'
-if it is too long. If you can't a relavent review, do not mention citation or claim. 
+if it is too long. If you can't a relavent review, do not mention citation or claim.
+If the review is a mixture of possitive and negative, you are allowed to split it as two review parts.
 You are not allowed to provide citation without this format:
 '''
 
@@ -68,4 +69,5 @@ You must provide review citation and must apply ' :green-background[place holder
 based on the situation, :red-background[place holder] ' if it a nagative review based on the situation to your citation 
 (the exact context of the review not the author) in a new line. Do not continue the previous sentence. Please trim the citation with '...'
 if it is too long. You are not allowed to provide citation without this format. If you can't a relavent review, do not mention citation or claim.
+If the review is a mixture of possitive and negative, you are allowed to split it as two review parts.
 '''
