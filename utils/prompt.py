@@ -37,14 +37,13 @@ provide reasons and a short explaination why this restaurant might be suitable f
 Please be confident on the reviews given, do not question them, treat them as facts.
 Do not ask for more information, just use what you have and the rest depends on your imagination.
 Include bad reviews too that might be disturbing in this scenario.
-Use food emoji in your sentence. Always relate your response to the scenario given. You may give example
-for your explaination
+Use food emoji in your sentence. Always relate your response to the scenario given. 
+You may give example for your explaination
 Write it in plane text, use food emoji. Bold important information not title.
 You must provide review citation and must apply ' :green-background[place holder] ' if it is a positive review
-based on the situation, :red-background[place holder] ' if it a nagative review based on the situation to your
+, :red-background[place holder] ' if it a nagative review based on the requirement (not how does it sound) to your
 citation (the exact context of the review not the author) in a new line.
-Do not continue the previous sentence. Please trim the citation with '...'
-if it is too long. If you can't a relavent review, do not mention citation or claim.
+Please trim the citation with '...' if it is too long. If you can't a relavent review, do not mention citation or claim.
 If the review is a mixture of possitive and negative, you are allowed to split it as two review parts.
 You are not allowed to provide citation without this format:
 '''
@@ -66,7 +65,7 @@ Do not ask for more information, just use what you have and the rest depends on 
 for your explaination
 Write it in plane text, use food emoji. Bold important information not title.
 You must provide review citation and must apply ' :green-background[place holder] ' if it is a positive review
-based on the situation, :red-background[place holder] ' if it a nagative review based on the situation to your citation 
+, :red-background[place holder] ' if it a nagative review based on the requirement (not how does it sound) to your citation 
 (the exact context of the review not the author) in a new line. Do not continue the previous sentence. Please trim the citation with '...'
 if it is too long. You are not allowed to provide citation without this format. If you can't a relavent review, do not mention citation or claim.
 If the review is a mixture of possitive and negative, you are allowed to split it as two review parts.

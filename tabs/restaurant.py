@@ -50,7 +50,7 @@ def display_restaurant():
                         st.write(restaurant.get_address())
 
                 with col2:
-                    preprocessed_reason = '\n' + restaurant.get_restaurant_reason().replace(':gray-background[', ':red-background[')
+                    preprocessed_reason = '\n' + format_citation(restaurant.get_restaurant_reason())
                     # maps_url = f"https://www.google.com/maps/place/?q=place_id:{restaurant.get_place_id()}"
                     waze_url = f"https://waze.com/ul?q={urllib.parse.quote(name)}"
                     preprocessed_reason = '\n' + restaurant.get_restaurant_reason()
@@ -71,7 +71,7 @@ def display_restaurant():
                     """, unsafe_allow_html=True)
 
                     for each_column_name in restaurant.get_custom_field_dict().keys():
-                        each_column_response = '\n' + restaurant.get_custom_field(each_column_name)
+                        each_column_response = '\n' + format_citation(restaurant.get_custom_field(each_column_name))
 
                         st.markdown(f"""
                         <div class='restaurant-card'>
@@ -105,3 +105,6 @@ def display_restaurant():
 
     else:
         st.info("No restaurants found. Try adjusting your search criteria.")
+
+def format_citation(citation):
+    return citation.replace(':red-background[', '<br>:red-background[').replace(':green-background[', '<br>:green-background[')
