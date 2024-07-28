@@ -86,7 +86,7 @@ def style1():
   .stButton>button {
       color: white;
       font-weight: bold;
-      background-color: #000000;
+      background-color: #262730;
       border-radius: 10px;
       padding: 10px 24px;
       border: 2px solid #000000;
@@ -95,7 +95,7 @@ def style1():
   }
   .stButton > button:hover {
       color: white;
-      background-color: #000000;
+      background-color: #262730;
       border-color: #3498db;
       transform: translateY(-2px);
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -103,14 +103,14 @@ def style1():
   }
   .stButton > button:active {
       color: white;
-      background-color: #000000;
+      background-color: #262730;
       transform: translateY(0);
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }  
   .stLinkButton> a {
       color: white !important;
       font-weight: bold !important;
-      background-color: #000000 !important;
+      background-color: #262730 !important;
       border-radius: 10px !important;
       padding: 10px 24px !important;
       border: 2px solid #000000 !important;
@@ -119,7 +119,7 @@ def style1():
   }
   .stLinkButton > a:hover {
       color: white !important;
-      background-color: #000000 !important;
+      background-color: #262730 !important;
       border-color: #3498db !important;
       transform: translateY(-2px) !important;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
