@@ -16,8 +16,8 @@ from tabs.profile import display_profile
 st.set_page_config(page_title="Eat-dentify", page_icon="🍽️", layout="wide", initial_sidebar_state='expanded')
 
 def main():
-
     style1()
+    
     no_sidebar_style = """
         <style>
             div[data-testid="stSidebarNav"] {display: none;}
@@ -26,7 +26,7 @@ def main():
     st.markdown(no_sidebar_style, unsafe_allow_html=True)
 
     # Create tabs
-    tab1, tab2, tab3, tab4, tab5 = st.tabs(["🏠 Restaurant", "🍔 Meal", "🍝 FoodBot", "📑 FoodGuide", "🔐 Profile"])
+    tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["🏠 Restaurant", "🍔 Meal", "🍝 FoodBot", "📑 FoodGuide", "🔐 Profile", "📚Manual"])
 
     # lang_chain_bundle = initialize_langchain()
     # buffer_chain = lang_chain_bundle["buffer_chain"]
@@ -73,11 +73,18 @@ def main():
     # tab4 - Food Guide
     with tab4:
         display_foodguide()
-
-    
+      
     with tab5:
         # st.warning("This is a work in progress. Please check back later!")
         display_profile()
 
+    with tab6:
+        # iframe_src = "https://learned-gooseberry-bd8.notion.site/Eat-dentify-1df1d6ade62e40358b1096e0f1fdbce9/?embed=True"
+        # iframe_src = "https://www.example.org"
+        # st.components.v1.iframe(iframe_src, height=500, scrolling=True)
+        st.image(".streamlit/Eat-dentify_manual.png")
+        st.write("---")
+        st.link_button("Direct me to manual", "https://learned-gooseberry-bd8.notion.site/Eat-dentify-1df1d6ade62e40358b1096e0f1fdbce9/?embed=True")
+    
 if __name__ == "__main__":
     main()

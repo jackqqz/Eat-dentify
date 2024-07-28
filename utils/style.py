@@ -106,7 +106,32 @@ def style1():
       background-color: #000000;
       transform: translateY(0);
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }  
+  .stLinkButton> a {
+      color: white !important;
+      font-weight: bold !important;
+      background-color: #000000 !important;
+      border-radius: 10px !important;
+      padding: 10px 24px !important;
+      border: 2px solid #000000 !important;
+      transition: all 0.3s ease !important;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important;
   }
+  .stLinkButton > a:hover {
+      color: white !important;
+      background-color: #000000 !important;
+      border-color: #3498db !important;
+      transform: translateY(-2px) !important;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+      border: 2px solid #000000 !important;
+  }
+  .stLinkButton > a:active {
+      color: white !important;
+      background-color: #000000 !important;
+      transform: translateY(0) !important;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+  }
+
   </style>
   """, unsafe_allow_html=True)
 
