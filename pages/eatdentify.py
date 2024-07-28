@@ -12,6 +12,7 @@ from tabs.chatbot import food_suggestion_chatbot
 from tabs.foodguide import display_foodguide
 from tabs.sidebar import display_sidebar
 from tabs.profile import display_profile
+from PIL import Image
 
 st.set_page_config(page_title="Eat-dentify", page_icon="🍽️", layout="wide", initial_sidebar_state='expanded')
 
@@ -26,7 +27,7 @@ def main():
     st.markdown(no_sidebar_style, unsafe_allow_html=True)
 
     # Create tabs
-    tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["🏠 Restaurant", "🍔 Meal", "🍝 FoodBot", "📑 FoodGuide", "🔐 Profile", "📚Manual"])
+    tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["🏠 Restaurant ", " 🍔 Meal ", " 🍝 FoodBot ", " 📑 FoodGuide ", " 🔐 Profile ", " 📚Manual"])
 
     # lang_chain_bundle = initialize_langchain()
     # buffer_chain = lang_chain_bundle["buffer_chain"]
@@ -82,9 +83,18 @@ def main():
         # iframe_src = "https://learned-gooseberry-bd8.notion.site/Eat-dentify-1df1d6ade62e40358b1096e0f1fdbce9/?embed=True"
         # iframe_src = "https://www.example.org"
         # st.components.v1.iframe(iframe_src, height=500, scrolling=True)
-        st.image(".streamlit/Eat-dentify_manual.png")
+        # st.image(".streamlit/Eat-dentify_manual.png")
+
+        # save image in session_state to make loading faster
+        if 'manual_thumbnail' not in st.session_state:
+            st.session_state.manual_thumbnail = Image.open(".streamlit/Eat-dentify_manual.png")
+
+        st.image(st.session_state.manual_thumbnail)
+        
         st.write("---")
         st.link_button("Direct me to manual", "https://learned-gooseberry-bd8.notion.site/Eat-dentify-1df1d6ade62e40358b1096e0f1fdbce9/?embed=True")
+
+        
     
 if __name__ == "__main__":
     main()

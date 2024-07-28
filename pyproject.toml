@@ -20,6 +20,7 @@ streamlit-geolocation = "^0.0.10"
 # SQLite = "^3.36.0"
 SQLAlchemy = "^1.4.0"
 # langchain = "^0.2.9"
+pillow = "10.4.0"
 
 [tool.pyright]
 # https://github.com/microsoft/pyright/blob/main/docs/configuration.md
