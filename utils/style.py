@@ -151,6 +151,7 @@ def style1():
       flex: 1;
       gap: 5px;
       padding: 0 10px;
+      min-width: 120px;
   }
   .stTabs [aria-selected="true"] {
       background-color: #262730 !important;
@@ -165,10 +166,23 @@ def style1():
   div[data-testid="stNotification"] {
       background-color: #F0F2F6 !important;
   }
+  .stTabs [data-baseweb="tab-list"] {
+      gap: 10px;
+      background-color: transparent;
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      scrollbar-width: none;  /* Firefox */
+      -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  }
+  .stTabs [data-baseweb="tab-list"]::-webkit-scrollbar {
+      display: none;  /* WebKit */
+  }
   </style>
   """, unsafe_allow_html=True)
 
   st.markdown('<p class="big-font">Eat-dentify 🍽️</p>', unsafe_allow_html=True)
+
+    
   st.write("Don't know what to eat? Let us help you decide!")
 
 def chat_bot():

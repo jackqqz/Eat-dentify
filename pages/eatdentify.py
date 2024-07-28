@@ -27,7 +27,15 @@ def main():
     st.markdown(no_sidebar_style, unsafe_allow_html=True)
 
     # Create tabs
-    tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["🏠  Restaurant ", " 🍔  Meal ", " 🍝  FoodBot ", " 📑  FoodGuide ", " 🔐  Profile ", " 📚  Manual"])
+    # Create tabs with both full labels and emoji-only labels
+    tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
+        "🏠 Restaurant",
+        "🍔 Meal",
+        "🍝 FoodBot",
+        "📑 FoodGuide",
+        "🔐 Profile",
+        "📚 Manual"
+    ])
 
     # lang_chain_bundle = initialize_langchain()
     # buffer_chain = lang_chain_bundle["buffer_chain"]
