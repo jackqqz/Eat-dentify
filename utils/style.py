@@ -131,7 +131,40 @@ def style1():
       transform: translateY(0) !important;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
   }
-
+  .stTabs {
+      width: 100%;
+  }
+  .stTabs [data-baseweb="tab-list"] {
+      gap: 10px;
+      background-color: transparent;
+  }
+  .stTabs [data-baseweb="tab"] {
+      height: 50px;
+      white-space: pre-wrap;
+      background-color: #F0F2F6;
+      border-radius: 10px;
+      color: #4F4F4F;
+      font-size: 14px;
+      font-weight: 400;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      gap: 5px;
+      padding: 0 10px;
+  }
+  .stTabs [aria-selected="true"] {
+      background-color: #262730 !important;
+      color: white !important;
+  }
+  .stTabs [data-baseweb="tab-highlight"] {
+      display: none;
+  }
+  div[aria-hidden="true"] {
+      display: none;
+  }
+  div[data-testid="stNotification"] {
+      background-color: #F0F2F6 !important;
+  }
   </style>
   """, unsafe_allow_html=True)
 
