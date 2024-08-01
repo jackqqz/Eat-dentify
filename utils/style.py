@@ -176,6 +176,23 @@ def light_theme():
   .stTabs [data-baseweb="tab-list"]::-webkit-scrollbar {
       display: none;  /* WebKit */
   }
+  [data-testid="stThumbValue"] {
+    margin-top: 2rem !important;
+  }
+  [data-baseweb="slider"] > div > div {
+      background-color: #D9DDE5 !important;
+      height: 20px !important;
+      border-radius: 6px !important;
+  }
+  [data-baseweb="slider"] [role="slider"] {
+      width: 0 !important;
+      height: 0 !important;
+      border: none !important;
+      box-shadow: none !important;
+  }
+  [data-testid="stTickBar"] {
+      display: none !important;
+  }
   </style>
   """, unsafe_allow_html=True)
 
@@ -289,7 +306,25 @@ def dark_theme():
   }
   .stTabs [data-baseweb="tab-list"]::-webkit-scrollbar {
       display: none;  /* WebKit */
+  }  
+  [data-testid="stThumbValue"] {
+    margin-top: 2rem !important;
   }
+  [data-baseweb="slider"] > div > div {
+      background-color: white !important;
+      height: 20px !important;
+      border-radius: 6px !important;
+  }
+  [data-baseweb="slider"] [role="slider"] {
+      width: 0 !important;
+      height: 0 !important;
+      border: none !important;
+      box-shadow: none !important;
+  }
+  [data-testid="stTickBar"] {
+      display: none !important;
+  }
+  
   </style>
   """, unsafe_allow_html=True)
 
