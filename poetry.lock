@@ -2049,6 +2049,20 @@ pymysql = ["pymysql", "pymysql (<1)"]
 sqlcipher = ["sqlcipher3_binary"]
 
 [[package]]
+name = "st-theme"
+version = "1.2.3"
+description = "A component that returns the active theme of the Streamlit app."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "st-theme-1.2.3.tar.gz", hash = "sha256:ca97aece1a48ded6e83fd742c27cb0851e1bce2100ab4b6c37c7b6e003b65b42"},
+    {file = "st_theme-1.2.3-py3-none-any.whl", hash = "sha256:0a54d9817dd5f8a6d7b0d071b25ae72eacf536c63a5fb97374923938021b1389"},
+]
+
+[package.dependencies]
+streamlit = ">=1.33"
+
+[[package]]
 name = "streamlit"
 version = "1.37.0"
 description = "A faster way to build and share data apps"
@@ -2299,4 +2313,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10.0,<3.12"
-content-hash = "3a8d5bd7d41bb90f92cb1e6e4e68c8994bc0d1ff0e0aa9f85b4ecebee0cee1f3"
+content-hash = "acebb04449a21988d843110c7ac8237f2614158867f35a09fb259ef4e55e56a3"

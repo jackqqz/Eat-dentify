@@ -21,6 +21,7 @@ streamlit-geolocation = "^0.0.10"
 SQLAlchemy = "^1.4.0"
 # langchain = "^0.2.9"
 pillow = "10.4.0"
+st-theme = "1.2.3"
 
 [tool.pyright]
 # https://github.com/microsoft/pyright/blob/main/docs/configuration.md

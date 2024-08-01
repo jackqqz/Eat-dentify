@@ -1,6 +1,8 @@
 from bs4 import BeautifulSoup
 import requests
 import streamlit as st
+from streamlit_theme import st_theme
+
 
 def get_article_info(url):
   try:

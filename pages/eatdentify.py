@@ -2,7 +2,7 @@ import streamlit as st
 import random
 
 # import from other files
-from utils.style import style1
+from utils.style import light_theme, dark_theme
 from utils.config import food_facts
 from utils.data_structures import RestaurantResult
 
@@ -13,11 +13,16 @@ from tabs.foodguide import display_foodguide
 from tabs.sidebar import display_sidebar
 from tabs.profile import display_profile
 from PIL import Image
+from streamlit_theme import st_theme
 
 st.set_page_config(page_title="Eat-dentify", page_icon="🍽️", layout="wide", initial_sidebar_state='expanded')
 
 def main():
-    style1()
+
+    if st_theme()['base'] == "light":  
+        light_theme()
+    else:
+        dark_theme()
     
     no_sidebar_style = """
         <style>

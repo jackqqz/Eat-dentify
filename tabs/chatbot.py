@@ -5,7 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-from utils.style import chat_bot, style1
+from utils.style import chat_bot
 from utils.prompt import choose_meal, analyse_cuisine, food_bot, nutrition, chart_data_prompt
 from utils.utils import response_imageOpenAI
 from utils.llm_api import get_OpenAI
