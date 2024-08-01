@@ -167,7 +167,6 @@ def light_theme():
   }
   .stTabs [data-baseweb="tab-list"] {
       gap: 10px;
-      background-color: transparent;
       overflow-x: auto;
       flex-wrap: nowrap;
       scrollbar-width: none;  /* Firefox */
@@ -298,7 +297,6 @@ def dark_theme():
   }
   .stTabs [data-baseweb="tab-list"] {
       gap: 10px;
-      background-color: transparent;
       overflow-x: auto;
       flex-wrap: nowrap;
       scrollbar-width: none;  /* Firefox */
@@ -311,7 +309,7 @@ def dark_theme():
     margin-top: 2rem !important;
   }
   [data-baseweb="slider"] > div > div {
-      background-color: white !important;
+      background-color: rgb(0, 0, 0, 225) !important;
       height: 20px !important;
       border-radius: 6px !important;
   }
