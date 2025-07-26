@@ -1,0 +1,88 @@
+# Eat-dentify
+
+Eat-dentify is an intelligent, AI-powered dining assistant that helps you discover restaurants, choose meals, and make informed nutritional decisions—all from a single, intuitive interface. Whether you’re planning a night out or cooking at home, Eat-dentify brings personalized food recommendations, recipe insights, and dietary analysis right to your fingertips.
+
+## 🚀 Key Features
+
+### 1. User Profile Management  
+- **Secure Authentication**: Sign up, log in, or continue as a guest for quick access.  
+- **Profile Customization**: Edit your username, password, and personal remarks to tailor your experience.
+
+### 2. AI-Enhanced Search  
+- **Restaurant Search**: Find restaurants matching your preferences.  
+- **Refined Filtering**: Narrow down results by amenities (e.g., parking, accessibility, price range).  
+- **Meal Search**: Browse menu options and select the perfect dish before you arrive.
+
+### 3. FoodBot Virtual Assistant  
+- **Meal Hunting**: Get dish recommendations based on dietary preferences (e.g., vegetarian, nut-free).  
+- **Image-Based Recipe Lookup**: Snap or upload a photo of any dish to receive the corresponding recipe, adjusted for your allergies or taste.  
+- **Nutrition Analysis**: Instantly analyze dish images to generate detailed nutrition charts and allergen alerts.  
+- **Conversational Q&A**: Ask FoodBot any questions about your meal or menu (e.g., “Show me all chicken dishes”) and receive precise answers.
+
+### 4. Cross-Platform Convenience  
+- Fully responsive design: enjoy full functionality on desktop and mobile devices.  
+
+## Demo
+### Login & Profile
+Manage your account and preferences.  
+<img width="2940" height="1840" alt="image" src="https://github.com/user-attachments/assets/0743d50e-840c-4247-9204-9576be2eda41" />
+
+### Search Flows
+Explore restaurant and meal search in action.
+<img width="2940" height="1840" alt="image" src="https://github.com/user-attachments/assets/58b9b839-9fd2-493d-8bbb-0218d6f4a14b" />
+<img width="2940" height="1840" alt="image" src="https://github.com/user-attachments/assets/a828e366-7c94-4381-8555-b20cbc9d19f4" />
+
+
+### FoodBot Interactions
+See image-to-recipe, nutrition analysis, and conversational queries.
+<img width="2940" height="1840" alt="image" src="https://github.com/user-attachments/assets/b72e858c-eac9-420b-9862-f54cc9e9168d" />
+
+
+## Installation & Setup
+
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/your-username/eat-dentify.git
+   cd eat-dentify
+    ````
+
+2. **Install dependencies**
+
+   ```bash
+   # If using npm
+   npm install
+
+   # Or using Yarn
+   yarn install
+   ```
+
+3. **Configure environment variables**
+   Copy `.env.example` to `.env` and fill in your API keys for authentication and AI services.
+
+4. **Run the development server**
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+5. **Build for production**
+
+   ```bash
+   npm run build
+   # or
+   yarn build
+   ```
+
+## Technologies
+
+* **Project**: Streamlit (Python)
+* **AI & NLP**: OpenAI GPT (search summarization, conversational Q\&A), custom image-analysis models
+
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
