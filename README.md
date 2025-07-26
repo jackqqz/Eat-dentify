@@ -38,43 +38,6 @@ See image-to-recipe, nutrition analysis, and conversational queries.
 <img width="2940" height="1840" alt="image" src="https://github.com/user-attachments/assets/b72e858c-eac9-420b-9862-f54cc9e9168d" />
 
 
-## Installation & Setup
-
-1. **Clone the repository**  
-   ```bash
-   git clone https://github.com/your-username/eat-dentify.git
-   cd eat-dentify
-    ````
-
-2. **Install dependencies**
-
-   ```bash
-   # If using npm
-   npm install
-
-   # Or using Yarn
-   yarn install
-   ```
-
-3. **Configure environment variables**
-   Copy `.env.example` to `.env` and fill in your API keys for authentication and AI services.
-
-4. **Run the development server**
-
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
-
-5. **Build for production**
-
-   ```bash
-   npm run build
-   # or
-   yarn build
-   ```
-
 ## Technologies
 
 * **Project**: Streamlit (Python)
