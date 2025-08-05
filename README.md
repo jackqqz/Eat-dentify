@@ -1,6 +1,6 @@
 # Eat-dentify
-
-Eat-dentify is an intelligent, AI-powered dining assistant that helps you discover restaurants, choose meals, and make informed nutritional decisions—all from a single, intuitive interface. Whether you’re planning a night out or cooking at home, Eat-dentify brings personalized food recommendations, recipe insights, and dietary analysis right to your fingertips.
+Have a hard time deciding what of where to have your next meal?
+Eat-dentify is an intelligent, AI-powered dining assistant that helps you discover restaurants, choose meals, and make informed nutritional decisions—all from a single, intuitive interface using natural languages. Whether you’re planning a night out or cooking at home, Eat-dentify brings personalized food recommendations, recipe insights, and dietary analysis right to your fingertips.
 
 ## 🚀 Key Features
 
@@ -30,6 +30,7 @@ Manage your account and preferences.
 ### Search Flows
 Explore restaurant and meal search in action.
 <img width="2940" height="1840" alt="image" src="https://github.com/user-attachments/assets/58b9b839-9fd2-493d-8bbb-0218d6f4a14b" />
+<img width="3840" height="2160" alt="image" src="https://github.com/user-attachments/assets/e95c6b1a-a33a-4bd5-ac25-6b177790e98c" />
 <img width="2940" height="1840" alt="image" src="https://github.com/user-attachments/assets/a828e366-7c94-4381-8555-b20cbc9d19f4" />
 
 
@@ -42,6 +43,7 @@ See image-to-recipe, nutrition analysis, and conversational queries.
 
 * **Project**: Streamlit (Python)
 * **AI & NLP**: OpenAI GPT (search summarization, conversational Q\&A), custom image-analysis models
+* **Notion**: https://learned-gooseberry-bd8.notion.site/Eat-dentify-1df1d6ade62e40358b1096e0f1fdbce9
 
 
 ## 📄 License
