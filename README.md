@@ -38,6 +38,9 @@ Explore restaurant and meal search in action.
 See image-to-recipe, nutrition analysis, and conversational queries.
 <img width="2940" height="1840" alt="image" src="https://github.com/user-attachments/assets/b72e858c-eac9-420b-9862-f54cc9e9168d" />
 
+### Video Explanation
+A short video to demonstrate how the project works
+https://drive.google.com/file/d/17SG41PXatlIYbOj8pGmprhCzGAGc2Azd/view?usp=sharing
 
 ## Technologies
 
