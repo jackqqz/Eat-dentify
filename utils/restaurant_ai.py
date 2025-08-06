@@ -10,6 +10,18 @@ from utils.llm_api import get_Gemini
 from utils.google_map_api import gmaps_text_search, get_review_and_photo
 
 def add_column(input: Input, restaurant: Restaurant, prompt: str, column_name: str) -> Restaurant:
+    """
+    Add a additional custom analysis column to a restaurant using AI-generated content.
+    
+    Args:
+        input (Input): User input object containing search criteria and preferences
+        restaurant (Restaurant): Restaurant object to analyze
+        prompt (str): Custom analysis question or instruction
+        column_name (str): Name for the new analysis column
+        
+    Returns:
+        Restaurant: Updated restaurant object with new custom field
+    """
     model = get_Gemini()
 
     response = model.generate_content(f"knowing that {input.get_remarks()}, the review {restaurant.get_review()}, tell me about: {prompt}" + column_prompt)
@@ -19,8 +31,27 @@ def add_column(input: Input, restaurant: Restaurant, prompt: str, column_name: s
 
 def process_restaurant(input: Input) -> RestaurantResult:
     """
-    Be caution with this function, it triggers one text search five place details, five photo and one geocode.
-    It may cost a lot based on google maps api https://developers.google.com/maps/documentation/places/web-service/usage-and-billing
+    Main restaurant processing pipeline using AI and Google Maps API.
+    
+    Args:
+        input (Input): User input object with search criteria
+        
+    Returns:
+        RestaurantResult: Processed restaurant results with AI analysis, or None on error
+        
+    WARNING: This function triggers multiple Google Maps API calls:
+    - 1 text search, 5 place details, 5 photo requests, 1 geocode
+    - May incur significant costs based on Google Maps API pricing
+    
+    Complete processing pipeline:
+    1. Generate AI-optimized search prompt from user input
+    2. Perform Google Maps text search with filters
+    3. Select most relevant restaurants (max 5) using AI
+    4. Gather reviews and photos for each restaurant
+    5. Generate AI-powered restaurant recommendations
+    6. Create AI-suggested meals for each restaurant
+    
+    Includes progress tracking, error handling, and user status updates.
     """
     with st.status("Searching for restaurant...", expanded=True) as status:
 
@@ -106,7 +137,19 @@ def process_restaurant(input: Input) -> RestaurantResult:
 
 
 def get_search_prompt(input: Input) -> str:
-
+    """
+    Generate an optimized search prompt for Google Maps API using AI.
+    
+    Args:
+        input (Input): User input object containing search preferences
+        
+    Returns:
+        str: AI-optimized search query formatted for Google Maps text search
+        
+    Uses Google's Gemini AI to transform user remarks and preferences
+    into an effective search query, then combines with cuisine, craving,
+    and location information to create the final search prompt.
+    """
     model = get_Gemini()
     
     response = model.generate_content(f"{search_prompt} \n\n{input.get_remarks()}")
@@ -114,6 +157,15 @@ def get_search_prompt(input: Input) -> str:
     return text_search_prompt
     
 def generate_random_index(filtered_results) -> list[int]:
+    """
+    Generate random non-duplicating indices.
+    
+    Args:
+        filtered_results: List of restaurant results from Google Maps API
+        
+    Returns:
+        list[int]: List of random indices (max 5) for restaurant selection
+    """
     model = get_Gemini()
     no_to_generate = 0
 
@@ -135,6 +187,18 @@ def generate_random_index(filtered_results) -> list[int]:
 
 
 def restaurant_parser(filtered_results) -> RestaurantResult:
+    """
+    Parse Google Maps API results into RestaurantResult objects.
+    
+    Args:
+        filtered_results: Raw restaurant data from Google Maps API
+        
+    Returns:
+        RestaurantResult: Structured result object containing selected restaurants
+        
+    Creates a RestaurantResult object using filtered Google Maps data
+    and AI-generated random indices for restaurant selection.
+    """
     
     restaurant_result = RestaurantResult(
         filtered_results,
@@ -145,6 +209,20 @@ def restaurant_parser(filtered_results) -> RestaurantResult:
     
 
 def get_review_summary(restaurant: Restaurant, input: Input) -> str:
+    """
+    Generate AI-powered restaurant recommendation reasoning from reviews.
+    
+    Args:
+        restaurant (Restaurant): Restaurant object with review data
+        input (Input): User input object with preferences and criteria
+        
+    Returns:
+        str: AI-generated explanation of why this restaurant is recommended
+        
+    Uses Google's Gemini AI to analyze restaurant reviews and generate
+    personalized recommendation reasoning based on user preferences.
+    Strictly references only the provided review data for accuracy.
+    """
   model = get_Gemini()
   review = restaurant.get_review()
   name = restaurant.get_name()
@@ -160,6 +238,23 @@ def get_review_summary(restaurant: Restaurant, input: Input) -> str:
   return response.text
 
 def get_meal_suggestion(restaurant: Restaurant, input: Input):
+    """
+    Generate AI-suggested meal recommendations for a specific restaurant.
+    
+    Args:
+        restaurant (Restaurant): Restaurant object with review data
+        input (Input): User input object with preferences and dietary requirements
+        
+    Returns:
+        tuple: (meal, meal_citation, meal_description) where:
+            - meal (str): Name of the suggested dish
+            - meal_citation (str): Citation or source for the suggestion
+            - meal_description (str): Detailed description of the meal
+            
+    Uses Google's Gemini AI to analyze restaurant reviews and suggest
+    specific meals that match user preferences. Returns structured data
+    with meal name, citation, and description separated by '| ' delimiter.
+    """
     model = get_Gemini()
     review = restaurant.get_review()
     name = restaurant.get_name()

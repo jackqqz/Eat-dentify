@@ -1,3 +1,5 @@
+"""This is where constants are defined for the Eat-dentify application."""
+
 # Restaurant types
 restaurants = [
     "Italian", "Korean", "Chinese", "Japanese", "Thai", "Vietnamese", "Indian",

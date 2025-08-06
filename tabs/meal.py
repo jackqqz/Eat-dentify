@@ -8,6 +8,21 @@ from utils.data_structures import Input, Restaurant, RestaurantResult
 
 
 def display_meal():
+    """
+    Display AI-suggested meals from restaurant search results in a two-column layout.
+    
+    Filters and displays meal recommendations from restaurants in the session state:
+    - Filters out restaurants that don't have valid meal suggestions ('None' meals)
+    - Creates a responsive two-column grid layout for meal display
+    - Shows each meal in an expandable card with:
+        * Meal name as the header
+        * Detailed meal description
+        * Citation information with restaurant source
+        * Wikipedia search link for additional information
+    
+    Only displays content when valid meal results are available.
+    """
+
     results = st.session_state.results.get_list()
     results = [
         place for place in results
@@ -40,5 +55,5 @@ def display_meal():
                             </div>
                             <div style="height: 20px;"></div>
                         """, unsafe_allow_html=True)
-                    
-        
+
+

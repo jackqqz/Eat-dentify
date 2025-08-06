@@ -1,3 +1,6 @@
+"""This file contains the prompts used by the bot to generate responses throughout the application."""
+
+
 choose_meal = "Analyze this menu image and choose one dish as my meal. If you choose the dish before, don't choose it again. Include why you suggest this meal in point form with emoji. If you cannot identify any dishes, just say that you cannot identify any dish from the menu. Please make sure your result comply with the image, don't make up information"
 
 analyse_cuisine = "Analyze this image and determine the cuisine. Simple answer. List its ingredients, and provide cooking instructions with summary form. Your answer should using point form and emoji, you can also provide the useful video link or article if you find it. Please make sure your result complies with the image, don't make up information."

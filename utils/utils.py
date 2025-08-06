@@ -1,6 +1,6 @@
 import streamlit as st
 import random
-from utils.config import food_facts
+from utils.constants import food_facts
 import os
 import re
 import io

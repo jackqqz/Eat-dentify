@@ -3,7 +3,7 @@ import random
 
 # import from other files
 from utils.style import light_theme, dark_theme
-from utils.config import food_facts
+from utils.constants import food_facts
 from utils.data_structures import RestaurantResult
 
 from tabs.restaurant import display_restaurant
@@ -18,6 +18,25 @@ from streamlit_theme import st_theme
 st.set_page_config(page_title="Eat-dentify", page_icon="🍽️", layout="wide", initial_sidebar_state='expanded')
 
 def main():
+    """
+    Main function for the Eat-dentify Streamlit application.
+    
+    This function sets up and runs the complete Eat-dentify web application with the following features:
+    - Dynamic theme switching (light/dark mode)
+    - Multi-tab interface with 6 main sections:
+        * Restaurant: Find and explore restaurant options
+        * Meal: Meal planning and nutrition information
+        * FoodBot: AI-powered food suggestion chatbot
+        * FoodGuide: Comprehensive food and nutrition guide
+        * Profile: User profile management and login system
+        * Manual: Application documentation and user guide
+    - Session state management for user data persistence
+    - Sidebar for user input and navigation
+    - Random food facts display when no search results are available
+    
+    The application maintains user login state, location preferences, search results,
+    and other session data throughout the user's interaction.
+    """
 
     if st_theme()['base'] == "light":  
         light_theme()
@@ -89,15 +108,10 @@ def main():
         display_foodguide()
       
     with tab5:
-        # st.warning("This is a work in progress. Please check back later!")
         display_profile()
 
     with tab6:
-        # iframe_src = "https://learned-gooseberry-bd8.notion.site/Eat-dentify-1df1d6ade62e40358b1096e0f1fdbce9/?embed=True"
-        # iframe_src = "https://www.example.org"
-        # st.components.v1.iframe(iframe_src, height=500, scrolling=True)
-        # st.image(".streamlit/Eat-dentify_manual.png")
-
+        
         # save image in session_state to make loading faster
         if 'manual_thumbnail' not in st.session_state:
             st.session_state.manual_thumbnail = Image.open(".streamlit/Eat-dentify_manual.png")

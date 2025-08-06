@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5bc758a5-26bf-4877-86d3-1272f39f19c7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/pages/eatdentify.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/eatdentify.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/chatbot.py" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/chatbot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/foodguide.py" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/foodguide.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/meal.py" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/meal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/profile.py" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/profile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/restaurant.py" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/restaurant.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/sidebar.py" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/sidebar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/signup.py" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/signup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/article.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/article.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utils.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="30tdrEv3fXvdATzHQvejxhcftVW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/foongyihao/Desktop/Computer science/AI Nusantara Industry Focused AI/Eat-dentify"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-babbdf50b680-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.15989.155" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5bc758a5-26bf-4877-86d3-1272f39f19c7" name="Changes" comment="" />
+      <created>1754451000519</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1754451000519</updated>
+    </task>
+    <servers />
+  </component>
+</project>

@@ -1,13 +1,19 @@
 import streamlit as st
 import pandas as pd
 from streamlit_geolocation import streamlit_geolocation
-from utils.config import restaurants
+from utils.constants import restaurants
 from utils.google_map_api import get_location_info
 
 from utils.restaurant_ai import process_restaurant
 from utils.data_structures import Input, Restaurant, RestaurantResult
 
 def display_sidebar():
+    """
+    Display the interactive sidebar for restaurant search with comprehensive filtering options.
+    
+    Handles both authenticated and guest user experiences with appropriate
+    feature availability and personalization options.
+    """
     if st.session_state.logged_in:
         st.header("Welcome Back, " + st.session_state.username + " 👨‍🦰🍤🍙🥂")
         st.markdown(f"Your personal remark: **{st.session_state.user_remarks}**")
@@ -73,12 +79,3 @@ def display_sidebar():
             process_result.get_list()
             
         st.session_state.input = input_obj
-        # st.toast(str(st.session_state.results))
-
-
-# def get_results() -> RestaurantResult:
-#     st.toast(str(st.session_state.results))
-#     return st.session_state.results
-
-
-# session_state.ai_suggestions =

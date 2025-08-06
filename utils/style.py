@@ -1,3 +1,5 @@
+"""This file contains functions to apply custom styles to Streamlit components."""
+
 import streamlit as st
 
 def restaurant_style():

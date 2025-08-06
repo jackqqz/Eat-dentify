@@ -1,7 +1,5 @@
 """
-Get and manage your llm client here.
-If you find yourself getting these model in other file, please move it here.
-So we can manage it in one place.
+This is the file for llm client initialization.
 """
 
 import os
