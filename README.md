@@ -11,19 +11,19 @@ The application integrates Google Places API with multiple Large Language Model 
 ### Login & Profile
 
 Comprehensive account management and preference customization interface.
-`<img width="2940" height="1840" alt="image" src="https://github.com/user-attachments/assets/0743d50e-840c-4247-9204-9576be2eda41" />`
+<img width="2940" height="1840" alt="image" src="https://github.com/user-attachments/assets/0743d50e-840c-4247-9204-9576be2eda41" />
 
 ### Search Flows
 
 Natural language restaurant and meal discovery demonstration.
-`<img width="2940" height="1840" alt="image" src="https://github.com/user-attachments/assets/58b9b839-9fd2-493d-8bbb-0218d6f4a14b" />`
-`<img width="3840" height="2160" alt="image" src="https://github.com/user-attachments/assets/e95c6b1a-a33a-4bd5-ac25-6b177790e98c" />`
-`<img width="2940" height="1840" alt="image" src="https://github.com/user-attachments/assets/a828e366-7c94-4381-8555-b20cbc9d19f4" />`
+<img width="2940" height="1840" alt="image" src="https://github.com/user-attachments/assets/58b9b839-9fd2-493d-8bbb-0218d6f4a14b" />
+<img width="3840" height="2160" alt="image" src="https://github.com/user-attachments/assets/e95c6b1a-a33a-4bd5-ac25-6b177790e98c" />
+<img width="2940" height="1840" alt="image" src="https://github.com/user-attachments/assets/a828e366-7c94-4381-8555-b20cbc9d19f4" />
 
 ### FoodBot Interactions
 
 Multi-modal AI assistant showcasing image analysis and conversational capabilities.
-`<img width="2940" height="1840" alt="image" src="https://github.com/user-attachments/assets/b72e858c-eac9-420b-9862-f54cc9e9168d" />`
+<img width="2940" height="1840" alt="image" src="https://github.com/user-attachments/assets/b72e858c-eac9-420b-9862-f54cc9e9168d" />
 
 ### Video Explanation
 
